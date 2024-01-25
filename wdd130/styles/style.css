@@ -1,0 +1,81 @@
+
+nav {
+    background-color: steelblue;
+    padding: 10px;
+}
+
+/* ナビゲーション内のリンクのスタイル */
+nav a {
+    color: white;
+    display: block;
+    padding: 20px; /* 元のコードから修正せず */
+}
+
+/* 見出し1（h1）のテキストカラー */
+h1 {
+    color: steelblue;
+}
+
+/* 画像のスタイル */
+img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0  0 1rem 1rem;
+}
+
+/* 段落（p）のパディング */
+p {
+    padding: 10px;
+}
+
+main {
+    max-width: 840px;
+}
+
+aside {
+    width:20rem;
+    margin:1rem;
+    border:1px solid rgba(0,0,0,0.2);
+    padding:1rem;
+    background-color: #eee;
+    color: #333;
+    text-align:center;
+    position:relative;
+}
+aside img{
+    width: 200px;
+    height: auto;
+}
+aside h2{
+    position:absolute;
+    top: 10px;
+    left: 150px
+}
+p{
+    padding:0;
+}
+
+footer{
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
+
+/*Class Selectors*/
+.box {
+    margin:1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding:1rem;
+    background-color:var(--prima);
+    color:var(--accent2-color);
+}
+
+aside {
+    width: 20em;
+    text-align: center;
+}
+
