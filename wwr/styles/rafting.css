@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+:root{
+    --main-color: #3498db;
+    --secondary-color: #e74c3c;
+    --font-family:'Oswald',sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 10fr;
+    align-items: center;
+    padding:10px;
+    background-color:#333;
+    color:aliceblue;
+    max-width: 100%;
+}
+header img{
+    width: 60px;
+    height:auto;
+    border-radius: 10px;
+
+}
+
+header nav a{
+    text-align: left;
+    color:beige;
+    padding-left:50px;
+    letter-spacing: 2px;
+
+}
+
+body{
+    color: var(--main-color);
+    font-family:var(--font-family);
+}
+
+
+h1{
+    color: #f0f0f0;
+    position:absolute;
+    top: 20px;
+    left: 400px;
+    z-index: 1;
+    font-size: 50px;
+    font-weight: lighter;
+    font-family: var(--font-family);
+}
+
+
+
+
+.hero {
+    position:relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.hero article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    width:100%;
+    padding: 20px;
+    max-width: 1000px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.hero article img {
+    flex: 1;
+    border-radius: 10px 0 0 10px;
+    margin-left: -00px;
+    width:px;
+    height:auto
+}
+
+.hero article p {
+    flex: 1;
+    margin-right:200px;
+    white-space:unset;
+    text-align: left;
+}
+
+
+
+.history-section h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 200px;
+}
+.history-section img{
+    display:block;
+    margin:auto;
+    border:1px solid black;
+}
+.history-section p{
+    text-align: left;
+    padding-left: px;
+    margin-bottom: 10px;
+    margin-top: -145px;
+    font-size: 37px;
+    color:#333;
+}
+
+
+.H2{
+    text-align: center;
+    padding-top:140px ;
+}
+.five-pictures{
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-end;
+}
+.five-pictures figure{
+    flex: 1;
+    text-align: center;
+    margin-top: 30px;
+}
+.five-pictures img {
+    max-width: 100%;
+    height:auto;
+}
+
+
+
+.sociallinks {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end; 
+}
+
+.sociallinks p {
+    margin-right: 30px; 
+}
+
+.sociallinks img {
+    height: 30px; 
+    width: auto; 
+    margin-left: 40px;
