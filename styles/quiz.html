@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML and CSS Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <form action="submit_quiz.php">
+        <header>
+            <h1>Basic HTML and CSS Quiz</h1>
+        </header>
+        <main>
+
+            <fieldset class="Q1">
+                <legend>What does the acronym CSS stand for?</legend>
+                <input class="column1" type="text" id="q1" name="q1">
+            </fieldset>
+            
+            <fieldset class="Q2">
+                <legend>How are id and class attributed in CSS?</legend>
+                <textarea class="column2" id="q2" name="q2" rows="4"></textarea>
+            </fieldset>
+            
+
+            <fieldset class="Q3">
+                <legend>Which of the following is a valid CSS comment?</legend>
+                <select class="column3" id="q3" name="q3">
+                    <option value="" selected disabled>Choose One ...</option>
+                    <option value="an1">// This is a comment</option>
+                    <option value="an2"># This is a comment </option>
+                    <option value="an3">/* This is a comment */</option>
+                    <option value="an4">** This is a comment **</option>
+                </select>
+            </fieldset>
+            
+
+            <fieldset class="Q4">
+                <legend>What is the bottom margin given this declaration</legend>
+                <input class="column4" type="text" name="example" placeholder="margin:10px 5px 15px;">
+                <input class="column5" type="number" id="q4" name="q4" step="1">
+            </fieldset>
+            
+            <footer>
+                <button type="submit">Submit Quiz</button>
+            </footer>
+        </main>
+    </form>
+</body>
+</html>
