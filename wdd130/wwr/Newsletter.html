@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+</head>
+<body>
+    <div class="newsletter-signup">
+        <meta charset="UTF-8">
+        <title>ニュースレター登録フォーム</title>
+        <link rel="stylesheet" href="/wwr/styles/Newsletter.css">
+        <h2>ニュースレターに登録する</h2>
+        <form action="signup.php" method="post">
+            <div class="form-group">
+                <label for="name">名前：</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">メールアドレス：</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit">登録</button>
+        </form>
+    </div>
+</body>
+</html>
