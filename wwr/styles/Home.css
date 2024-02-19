@@ -229,11 +229,11 @@ img {
     height: auto;
     border-radius: 5px;
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .images-container {
         grid-template-columns: repeat(2, 1fr);
     }
-}
+} */
 
 @media (max-width: 480px) {
     .images-container {
