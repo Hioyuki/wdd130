@@ -12,14 +12,13 @@
         <nav>
             <a href="https://hioyuki.github.io/wdd130/wwr/Home.html">Home</a>
             <a href="https://hioyuki.github.io/wdd130/wwr/about.html">About Us</a>
-            <a href="https://hioyuki.github.io/wdd130/trips.html">Trips</a>
+            <a href="https://hioyuki.github.io/wdd130/wwr/trips.html">Trips</a>
             <a href="https://hioyuki.github.io/wdd130/wwr/contact.html">Contact Us</a>
         </nav>
     </header>
     <main>
-        <body id="homepage">
-            <h1>Trips</h1>
-            <div id="page">
+        <h1>Trips</h1>
+        <div id="page">
             <div id="header">
                 <div class="con_header">
                     <h1 class="box_center">
@@ -47,99 +46,53 @@
                         </ul>
                     </div>
                 </div>
-                    <div class="con_main">
-                    <p class="logo"><img src="https://hioyuki.github.io/wdd130/wwr/images/img_slide2_1.jpeg"></p>
+                <div class="con_main">
+                    <p class="logo"><img src="https://hioyuki.github.io/wdd130/wwr/images/img_slide2_1.jpeg" alt="Scenic view"></p>
                     <h2 class="title_slider">
-                        After white water rafting, how about enjoying some valuable time <br class="view_sp">by taking in the beautiful scenery and relaxing in the hot springs?
+                        After white water rafting, how about enjoying some valuable time by taking in the beautiful scenery and relaxing in the hot springs?
                     </h2>
                     <div id="mainslider">
-                        <div class="slide img_main01"></div>
-                        <div class="slide img_main02"></div>
-                        <div class="slide img_main03"></div>
-                        <div class="slide img_main04"></div>
-                        <div class="slide img_main05"></div>
-                    </div><!--/#mainslider-->
+                        <!-- Slider images -->
+                    </div>
                     <div id="pageDown"><a href="#contents"></a></div>
                 </div>
-                </div><!-- /#header -->
+            </div><!-- /#header -->
             <div id="contents">
-                <div class="con_seach">
-                <div class="container_full">
-                    <form id="ZenSearchFrom" action="" method="get" target="_blank">
-                        <div id="searchBox">
-                            <p class="title_search"><span class="jp">Room availability search</span></p>
-                            <fieldset class="check-in">
-                                <legend>Chackin</legend>
-                                <div class="wrap">
-                                    <span id="js-date"><em><i id="js-year">2024</i>/<i id="js-month">02</i>/<i id="js-day">13</i></em></span>
-                                    <input type="text" id="checkin_date" name="checkin_date" autocomplete="off" value="2024/02/13" readonly>
-                                </div>
-                            </fieldset>
-                            <fieldset class="nights">
-                                <legend>Number of nights</legend>
-                                <select id="numOfNights">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                </select>
-                            </fieldset>
-                            <p class="field-button"><input class="sub-bgcolor over" type="submit" value="Search"></p>
-                        </div><!--/searchbox-->
-                        <div class="btns">
-                            <ul>
-                                <li><a class="over" href="" target="_blank">List of plans</a></li>
-                                <li><a class="over" href="" target="_blank">Reservation confirmation</a></li>
-                                <li><a class="over" href="" target="_blank">Reservation cancellation</a></li>
-                            </ul>
-                        </div><!-- /.btns -->
-                    </form>
-                </div>
-            </div>	<div class="con_intro">
-                    <div class="container">
-                        <div class="txt intro_inview">
-                            Standing before the serene and timeless beauty of the majestic river,
-                            I surrender myself to the forests of Lake Kawaguchi.
-                            The trees nurtured in this land
-                            transform and return to this place once more.
-                            The heartbeat of the lake, the breath of the forest,
-                            the rustle of the stars, the silence of the moon.
-                            Forgetting time, marking moments,
-                            Welcome to the forests of Lake Kawaguchi.
-                        </div>
-                        </p>
+                <div class="con_search">
+                    <div class="container_full">
+                        <form id="ZenSearchForm" action="" method="get" target="_blank">
+                            <div id="searchBox">
+                                <p class="title_search"><span class="jp">Room availability search</span></p>
+                                <fieldset class="check-in">
+                                    <legend>Check-in</legend>
+                                    <div class="wrap">
+                                        <span id="js-date"><em><i id="js-year">2024</i>/<i id="js-month">02</i>/<i id="js-day">13</i></em></span>
+                                        <input type="text" id="checkin_date" name="checkin_date" autocomplete="off" value="2024/02/13" readonly>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="nights">
+                                    <legend>Number of nights</legend>
+                                    <select id="numOfNights">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <!-- More options -->
+                                    </select>
+                                </fieldset>
+                                <p class="field-button"><input class="sub-bgcolor over" type="submit" value="Search"></p>
+                            </div><!--/searchBox-->
+                            <div class="btns">
+                                <ul>
+                                    <li><a class="over" href="" target="_blank">List of plans</a></li>
+                                    <li><a class="over" href="" target="_blank">Reservation confirmation</a></li>
+                                    <li><a class="over" href="" target="_blank">Reservation cancellation</a></li>
+                                </ul>
+                            </div><!-- /.btns -->
+                        </form>
                     </div>
-                </div><!-- /.con_intro -->
-            
-                <div class="con_rooms">
-                    <h3 class="st_tmp01 room_fadeIn"><span class="eng">ROOMS</span><span class="jp">A comfortable room that evokes the tranquility<br class="view_sp"> of Lake Kawaguchi's forest</span></h3>
-                    <div class="box_rooms">
-                        <div class="box_img room_fadeIn">
-                            <div id="slider_rooms">
-                                <div class="slide"><img src="https://hioyuki.github.io/wdd130/wwr/images/img_rooms01.jpeg" alt="ROOM"></div>
-                            </div><!--/#mainslider-->
-                        </div>
-                        <div class="box_text">
-                    </div><!-- /.box_rooms -->
-
-                <div class="con_cuisine bg_hotspring">
-                    <h3 class="st_tmp01 hotspring_fadeIn"><span class="eng">ONSEN</span><span class="jp">Natural hot springs</span></h3>
-                    <ul class="list_image hotspring_fadeIn">
-                        <li><img src="https://hioyuki.github.io/wdd130/wwr/images/hotspring_.jpeg" alt="Natural hot springs"></li>
-                        <li><img src="https://hioyuki.github.io/wdd130/wwr/images/hotspring_2.jpeg" alt="Natural hot springs"></li>
-                        <li><img src="https://hioyuki.github.io/wdd130/wwr/images/hotspring_3.jpeg" alt="Natural hot springs"></li>
-                    </ul>
-                    <div class="container hotspring_fadeIn">
-                        <h4>The sound of wind and birds,
-                            Soft hot springs of the open-air bath</h4>
-                        <div class="txt">The scent of the forest, the songs of birds, the rustle of leaves, and the gently embracing breeze of the lake. The hot springs, paved with Mount Fuji lava, gradually and deeply warm the body with far-infrared effects.</div>
-                        <div class="btn btn_border"><a href="https://www.fufukawaguchiko.jp/hotspring/" class="over">About Natural hot springs<span class="bd"><span class="bdT"></span><span class="bdB"></span><span class="bdR"></span><span class="bdL"></span></span></a></div>
-                    </div>
-                </div>
-            
+                </div><!-- /.con_search -->
+                <!-- Additional content sections -->
+            </div><!-- /#contents -->
+        </div><!-- /#page -->
     </main>
     <footer>
         <nav class="sociallinks">
@@ -152,4 +105,3 @@
     </footer>
 </body>
 </html>
-
