@@ -129,7 +129,6 @@
 </html> -->
 
 
-
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -149,23 +148,24 @@
             <a href="https://hioyuki.github.io/wdd130/wwr/contact.html">Contact Us</a>
         </nav>
     </header>
-    <div class="title">
-        <h1>HOME</h1>
-    </div>
     <div class="wrapper js-wrapper">
         <main class="experience-detail">
+            <!-- Key Visual Section -->
             <div class="key-visual --experience-detail">
                 <div class="key-visual__image-wrapper">
                     <img class="key-visual__image js-experience-image" src="https://hioyuki.github.io/wdd130/wwr/images/HOME_main.png" alt="Good_image">
                 </div>
             </div>
+            <!-- Activity Detail Section -->
             <div class="section__inner">
                 <div class="activity__wrapper">
                     <div class="activity">
+                        <!-- Activity Head Section -->
                         <div class="activity__head">
                             <div class="activity__detail">
                                 <div class="c-logo-klook">klook</div>
                                 <div class="activity__title">XXX White Water Rafting Experience (Ome)</div>
+                                <!-- Spot Rating Section -->
                                 <div class="spot-rating">
                                     <div class="spot-rating__rating">
                                         <span class="spot-rating__rating-star">0.0</span>
@@ -174,11 +174,13 @@
                                     <div class="spot-rating__separator">|</div>
                                     <div class="spot-rating__reservation-number">44 reservations</div>
                                 </div>
+                                <!-- Activity Info Section -->
                                 <div class="activity__info">
                                     <div class="activity__info-same-day-use">Next available day: March 1, 2024</div>
                                     <div class="activity__info-today-appointment">Instant Reservation</div>
                                 </div>
                             </div>
+                            <!-- Spot Price Section -->
                             <div class="spot-price">
                                 <div class="spot-price__wrap">
                                     <div class="spot-price__block">
@@ -194,6 +196,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Activity Description Section -->
                         <div class="activity__description">
                             <dl class="activity__description-list">
                                 <dt class="activity__description-title">Activity Overview</dt>
@@ -206,13 +209,37 @@
                                         <li>Discover the beauty of the river known for its wonderful valleys and great water sports opportunities</li>
                                     </ul>
                                 </dd>
-                                <!-- ここに他の<dt>と<dd>要素を続けて入れることができます -->
+                                <dt class="activity__description-title">Location (Supplemental)</dt>
+                                <dd class="activity__description-content">
+                                    <p>Wins Okutama Base: 2-411-1 Yuki-cho, Ome City, Tokyo 198-0064</p>
+                                </dd>
                             </dl>
+                            <!-- Content Container for Images and Newsletter Signup -->
+                            <div class="content-container">
+                                <div class="images-container">
+                                    <img src="/wwr/images/HOme.jpeg" alt="Slide 1">
+                                    <img src="/wwr/images/home_image3.jpeg" alt="Slide 3">
+                                    <img src="/wwr/images/2.png" alt="Slide 2">
+                                </div>
+                                <div class="newsletter-signup">
+                                    <h2>Subscribe to the newsletter</h2>
+                                    <form action="signup.php" method="post">
+                                        <div class="form-group">
+                                            <label for="name">Name:</label>
+                                            <input type="text" id="name" name="name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email:</label>
+                                            <input type="email" id="email" name="email" required>
+                                        </div>
+                                        <button type="submit">Register</button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- 他のセクション -->
         </main>
     </div>
     <footer>
@@ -223,6 +250,9 @@
             <a href="https://twitter.com/?lang=ja"><img src="images/I2.png" alt="Twitter"></a>
             <a href="https://www.instagram.com/"><img src="images/I3.png" alt="Instagram"></a>
         </nav>
+    </footer>
+</body>
+</html>
     </footer>
 </body>
 </html>
