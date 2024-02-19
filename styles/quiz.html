@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML and CSS Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <form action="submit_quiz.php">
+        <header>
+            <h1>Basic HTML and CSS Quiz</h1>
+        </header>
+        <main>
+            <div class="Q1">
+                <label for="q1">What does the acronym CSS stand for?</label>
+                <input class="column1" type="text" id="q1" name="q1">
+            </div>
+            
+            <div class="Q2">
+                <label for="q2">How are id and class attributed in CSS?</label>
+                <textarea class="column2" id="q2" name="q2" rows="4"></textarea>
+            </div>
+            
+            <div class="Q3">
+                <label for="q3">Which of the following is a valid CSS comment?</label>
+                <select class="column3" id="q3" name="q3">
+                    <option value="" selected disabled>Choose One...</option>
+                    <option value="an1">// This is a comment</option>
+                    <option value="an2"># This is a comment</option>
+                    <option value="an3">/* This is a comment */</option>
+                    <option value="an4">** This is a comment **</option>
+                </select>
+            </div>
+            
+            <div class="Q4">
+                <label for="example">What is the bottom margin given this declaration:</label>
+                <input class="column4" type="text" id="example" name="example" placeholder="margin:10px 5px 15px;">
+                <label for="q4" class="visually-hidden">Bottom margin value:</label>
+                <input class="column5" type="number" id="q4" name="q4" step="1">
+            </div>
+            
+            <footer>
+                <button type="submit">Submit Quiz</button>
+            </footer>
+        </main>
+    </form>
+</body>
+</html>
