@@ -1,17 +1,23 @@
-@media (max-width: 410px) {
+@media (max-width: 500px) {
 
     body {
         font-family: 'Roboto', sans-serif;
+        background-color: #fefefe;
     }
 
 header {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     padding: 3px;
+    height: 80px; */
     background-color: #004466;
     color: #ffffff;
-    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 header img {
@@ -32,12 +38,13 @@ header span {
 
     #menu {
         font-size: 2.0rem;
-        border: 0;
+        padding: 0.1rem ;
         background: none;
         position:fixed;
-        top: 0rem;
-        right: -0.2rem;
+        top: -0.2rem;
+        right: 0.1rem;
         z-index:2000;
+        color: gold;
     }
 
     #menu::before {
@@ -45,7 +52,7 @@ header span {
     }
 
     #menu.open::before{
-        content:"✖️"
+        content:"×"
     }
 
     .navigation{
@@ -55,11 +62,11 @@ header span {
         list-style: none;
         background-color: #333;
         color: #fff;
-        margin-left: 40px;
+        margin-left: 100px;
         position: absolute;
         top: 2.0rem;
-        left: 10rem;
-        width: 40vw;
+        left: 8rem;
+        width: 450px;
         z-index: 1000;
     }
 
@@ -93,7 +100,7 @@ header span {
         font-size: 0.8rem;
         line-height: 1.5;
         letter-spacing: 0.5px;
-        margin-left: -2rem;
+        margin-left: -1rem;
     }
 
     .active::before {
@@ -101,7 +108,7 @@ header span {
 }
 
 main {
-    padding: 0 auto;
+    margin-top: 150px;
 }
 
 main h1{
@@ -117,9 +124,9 @@ main h1{
 }
 
 .top-sections section {
-    background-color: aquamarine;
+    background-color: #e0f7fa;
     width: auto;
-    height: 30rem;
+    height: 20rem;
 }
 
 .top-sections section h2 {
@@ -135,16 +142,23 @@ main h1{
 
 .bottom-sections {
     flex: 1;
-    background-color: greenyellow;
+    background-color: #ffffff;
     width: auto;
     height: 40rem;
     box-sizing: border-box;
 }
 
 .bottom-sections h2 {
-    font-size: 20px;
+    font-size: 26px;
     text-align: center;
-    padding: 23px;
+    background-color: #f1f8e9;
+    color: #2e7d32;
+}
+
+.bottom-sections p {
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
 }
 
 button {
@@ -154,7 +168,7 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #2e7d32;
     color: white;
 }
 

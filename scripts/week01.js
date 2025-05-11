@@ -54,7 +54,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: true
+        completed: false
     },
     {
         subject: 'WDD',
@@ -82,9 +82,16 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     }
 ]
+
+function displayTotalCredits(filteredCourses) {
+    const total = filteredCourses
+    .filter(course => course.completed)
+    .reduce((sum,course) => sum + course.credits,0)
+    document.getElementById('total-credits').textContent = `Total Credits: ${total}`;
+}
 
 function displayCourses(filter) {
     const container = document.getElementById('course-List');
@@ -95,11 +102,13 @@ function displayCourses(filter) {
     filtered = courses.filter(course => course.subject === filter);
 }
 
+displayTotalCredits(filtered);
+
 filtered.forEach(course => {
     const div = document.createElement('div');
     div.className = 'course ' + (course.completed ? 'completed' : 'not-completed');
     div.innerHTML = `
-    <h3>${course.subject} ${course.number}    ${course.completed ? '✅ Completed' : '❌ Not Completed'}</h3>
+    <h3>${course.subject} ${course.number}    ${course.completed ? '✅' : ''}</h3>
 
     `;
     container.appendChild(div);
